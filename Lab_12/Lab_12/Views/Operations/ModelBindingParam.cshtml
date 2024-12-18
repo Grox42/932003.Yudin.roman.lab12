@@ -1,0 +1,18 @@
+@using Lab_12.Extensions
+
+<div class="content">
+    <h2 class="demonstration">ModelBindingInParameters</h2>
+
+    <form class="center" method="post">
+        <input type="number" name="FirstNumber">
+        <select name="Operator">
+            <option value="@Operator.Plus">@Operator.Plus.Description()</option>
+            <option value="@Operator.Minus">@Operator.Minus.Description()</option>
+            <option value="@Operator.Multiply">@Operator.Multiply.Description()</option>
+            <option value="@Operator.Divide">@Operator.Divide.Description()</option>
+        </select>
+        <input type="number" name="SecondNumber">
+        <input type="submit" value="Submit"/>
+    </form>
+
+</div>
